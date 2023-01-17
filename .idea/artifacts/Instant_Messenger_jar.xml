@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Instant Messenger:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Instant_Messenger_jar</output-path>
+    <root id="archive" name="Instant Messenger.jar">
+      <element id="module-output" name="Instant Messenger" />
+    </root>
+  </artifact>
+</component>
