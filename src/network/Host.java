@@ -22,14 +22,12 @@ public class Host {
     public void runHost() {
         try {
             this.server = new ServerSocket(this.port, 2);
-            while (true) {
-                try {
-                    waitForConnection();
-                    setupStreams();
-                    setupThreads();
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
+            try {
+                waitForConnection();
+                setupStreams();
+                setupThreads();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
