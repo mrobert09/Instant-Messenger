@@ -11,11 +11,12 @@ public class Main {
         System.out.println("1. Host");
         System.out.println("2. Connect to host");
         int choice = scanner.nextInt();
+        scanner.nextLine();
         if (choice == 1) {
             Host host = new Host(name, 23456);
             host.runHost();
         } else {
-            System.out.print("Connect to what IP?");
+            System.out.println("Connect to what IP?");
             String ip = scanner.nextLine();
             Guest guest = new Guest(name, ip, 23456);
             guest.runGuest();
